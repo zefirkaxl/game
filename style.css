@@ -1,0 +1,149 @@
+.pole {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  margin: auto;
+  position: relative;
+}
+.img {
+  position: absolute;
+}
+.trasa {
+  position: relative;
+  width: 90vw;
+  border-bottom: 2px solid black;
+  margin: auto;
+  margin-top: 100px;
+}
+.pig {
+  position: absolute;
+  top: -70px;
+  left: 0;
+  
+  width: 80px;
+  height: 80px;
+  background: url(./img/naz.png) 0 0 /100% 100% no-repeat;
+
+}
+.per {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  width: 60px;
+  height: 40px;
+  background: url(./img/танк-removebg-preview-removebg-preview.png) 0 0 / 100% 100% no-repeat;
+  
+}
+.perAnim{
+  animation: lef 3s linear infinite;
+}
+.litak{
+  position: absolute;
+  width: 70px;
+  height: 50px;
+  right: 0;
+  top: -80px;
+background: url(./img/litac.png) 0 0 / 100% 100% no-repeat;
+
+}
+.anim{
+  animation: lef 7s linear infinite;
+}
+.button__container{
+  position: relative;
+}
+.button1{
+  position: absolute;
+  margin: auto;
+  display: flex;
+  top: 10px;
+  right:  0;
+  padding: 15px 25px 15px 25px;
+}
+.vybuh{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: url(./img/vybuh.png)0 0 / 100% 100% no-repeat;
+  top: -80px;
+  left: 120px;
+  
+  scale: 0;
+}
+.vybuhAni{
+  animation: vzr 1s ease ;
+}
+@keyframes vzr {
+  0% {
+
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.button2{
+  position: absolute;
+  top: 10px;
+  padding: 15px 25px 15px 25px;
+}
+.record{
+  text-align: center;
+  margin-top: -70px;
+}
+.pula{
+  position: absolute;
+  width: 30px;
+  height: 40px;
+  
+}
+@keyframes lef {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: 667px;
+  }
+}
+.pul{
+  animation:pul 2s infinite linear;
+}
+@keyframes pul {
+  0% {
+    top: -70px;
+  left: 40px;
+  
+  background: url(./img/images-removebg-preview.png) 0 0 / 100% 100% no-repeat;;
+    
+  }
+  100% {
+    left: 90vw;
+    top: -70px;
+  
+  
+  background: url(./img/images-removebg-preview.png) 0 0 / 100% 100% no-repeat;;
+  }
+}
+
+.jjj {
+  animation: jamp 1.3s  ease ;
+}
+@keyframes jamp {
+  0% {
+    top: -70px;
+    left: 0;
+    background: url('./img/naz.png') 0 0/100% 100% no-repeat;
+  }
+  
+  50% {
+    top: -150px;
+    background: url('./img/naz.png') 0 0/100% 100% no-repeat;
+  }
+  100% {
+    top: -70px;
+    left: 0;
+    background: url('./img/naz.png') 0 0/100% 100% no-repeat;
+  }
+
+}
